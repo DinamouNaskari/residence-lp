@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Hotel La residence LP</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <div class="nav__bar">
+        <div class="logo">
+          <a href="#"><img src="assets/logo.png" alt="logo" /></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#explore">Explorer</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="btn nav__btn">Réserver maintenant</button>
+    </nav>
+    <div class="section__container header__container" id="home">
+      <p>Simple - Unique - Convivial</p>
+      <h1>Sentez-vous comme chez vous<br />dans notre <span>hôtel</span>.</h1>
+    </div>
+  </header>
+
+  <section class="section__container booking__container">
+    <form action="/" class="booking__form">
+      <div class="input__group">
+        <span><i class="ri-calendar-2-fill"></i></span>
+        <div>
+          <label for="check-in">ARRIVÉE</label>
+          <input type="text" placeholder="Date d’arrivée" />
+        </div>
+      </div>
+      <div class="input__group">
+        <span><i class="ri-calendar-2-fill"></i></span>
+        <div>
+          <label for="check-out">DÉPART</label>
+          <input type="text" placeholder="Date de départ" />
+        </div>
+      </div>
+      <div class="input__group">
+        <span><i class="ri-user-fill"></i></span>
+        <div>
+          <label for="guest">INVITÉS</label>
+          <input type="text" placeholder="Nombre de personnes" />
+        </div>
+      </div>
+      <div class="input__group input__btn">
+        <button class="btn">VÉRIFIER</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="section__container about__container" id="about">
+    <div class="about__image">
+      <img src="assets/salon_grand.png" alt="à propos" />
+    </div>
+    <div class="about__content">
+      <p class="section__subheader">À PROPOS DE NOUS</p>
+      <h2 class="section__header">Les meilleures vacances commencent ici !</h2>
+      <p class="section__description">
+        Avec un accent sur les hébergements de qualité, les expériences personnalisées
+        et une réservation sans tracas, notre plateforme est dédiée à faire de chaque
+        voyage un souvenir inoubliable.
+      </p>
+      <div class="about__btn">
+        <button class="btn">En savoir plus</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container room__container">
+    <p class="section__subheader">NOS CHAMBRES</p>
+    <h2 class="section__header">Le repos le plus mémorable commence ici.</h2>
+    <div class="room__grid">
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/room-1.jpg" alt="chambre" />
+          <div class="room__card__icons">
+            <span><i class="ri-heart-fill"></i></span>
+            <span><i class="ri-paint-fill"></i></span>
+            <span><i class="ri-shield-star-line"></i></span>
+          </div>
+        </div>
+        <div class="room__card__details">
+          <h4>Vue sur l’océan - Deluxe</h4>
+          <p>
+            Profitez du luxe avec une vue imprenable sur l’océan depuis votre suite privée.
+          </p>
+          <h5>À partir de <span>7500 CFA/nuit</span></h5>
+          <button class="btn">Réserver</button>
+        </div>
+      </div>
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/room-2.jpg" alt="chambre" />
+          <div class="room__card__icons">
+            <span><i class="ri-heart-fill"></i></span>
+            <span><i class="ri-paint-fill"></i></span>
+            <span><i class="ri-shield-star-line"></i></span>
+          </div>
+        </div>
+        <div class="room__card__details">
+          <h4>Chambre Exécutive Ville</h4>
+          <p>
+            Élégance urbaine et confort moderne au cœur de la ville.
+          </p>
+          <h5>À partir de <span>10000 CFA/nuit</span></h5>
+          <button class="btn">Réserver</button>
+        </div>
+      </div>
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/room-3.jpg" alt="chambre" />
+          <div class="room__card__icons">
+            <span><i class="ri-heart-fill"></i></span>
+            <span><i class="ri-paint-fill"></i></span>
+            <span><i class="ri-shield-star-line"></i></span>
+          </div>
+        </div>
+        <div class="room__card__details">
+          <h4>Retraite Familiale au Jardin</h4>
+          <p>
+            Spacieuse et accueillante, parfaite pour des souvenirs inoubliables en famille.
+          </p>
+          <h5>À partir de <span>12500 CFA/nuit</span></h5>
+          <button class="btn">Réserver</button>
+        </div>
+      </div>
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/wifi.jfif" alt="chambre" />
+          <div class="room__card__icons">
+            <span><i class="ri-heart-fill"></i></span>
+            <span><i class="ri-paint-fill"></i></span>
+            <span><i class="ri-shield-star-line"></i></span>
+          </div>
+        </div>
+        <div class="room__card__details">
+          <h4>WI-FI Gratuit</h4>
+          <p>
+            Conexion rapide et fluide.
+          </p>
+          <h5>Gb <span>/s</span></h5>
+          <button class="btn">Réserver</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service" id="service">
+    <div class="section__container service__container">
+      <div class="service__content">
+        <p class="section__subheader">SERVICES</p>
+        <h2 class="section__header">Toujours viser l’excellence.</h2>
+        <ul class="service__list">
+          <li>
+            <span><i class="ri-shield-star-line"></i></span>
+            Sécurité haut de gamme
+          </li>
+          <li>
+            <span><i class="ri-24-hours-line"></i></span>
+            Service de chambre 24h/24
+          </li>
+          <li>
+            <span><i class="ri-headphone-line"></i></span>
+            Salle de conférence
+          </li>
+          <li>
+            <span><i class="ri-map-2-line"></i></span>
+            Support guide touristique
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container banner__container">
+    <div class="banner__content">
+      <div class="banner__card">
+        <h4>25+</h4>
+        <p>Propriétés disponibles</p>
+      </div>
+      <div class="banner__card">
+        <h4>350+</h4>
+        <p>Réservations effectuées</p>
+      </div>
+      <div class="banner__card">
+        <h4>600+</h4>
+        <p>Clients satisfaits</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="explore" id="explore">
+    <p class="section__subheader">EXPLORER</p>
+    <h2 class="section__header">Nouveautés du jour</h2>
+    <div class="explore__bg">
+      <div class="explore__content">
+        <p class="section__description">10 MARS 2025</p>
+        <h4>Un nouveau menu est disponible dans notre hôtel.</h4>
+        <button class="btn">Continuer</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="logo">
+          <a href="#home"><img src="assets/logo.png" alt="logo" /></a>
+        </div>
+        <p class="section__description">
+          Découvrez un monde de confort, de luxe et d’aventure en explorant notre sélection d’hôtels,
+          rendant chaque instant de votre escapade véritablement exceptionnel.
+        </p>
+        <button class="btn">Réserver maintenant</button>
+      </div>
+      <div class="footer__col">
+        <h4>LIENS RAPIDES</h4>
+        <ul class="footer__links">
+          <li><a href="#">Parcourir les destinations</a></li>
+          <li><a href="#">Offres spéciales & forfaits</a></lai>
+          <li><a href="#">Types de chambres & équipements</a></li>
+          <li><a href="#">Avis & évaluations des clients</a></li>
+          <li><a href="#">Conseils & guides de voyage</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>NOS SERVICES</h4>
+        <ul class="footer__links">
+          <li><a href="#">Assistance concierge</a></li>
+          <li><a href="#">Options de réservation flexibles</a></li>
+          <li><a href="#">Transferts aéroport</a></li>
+          <li><a href="#">Bien-être & loisirs</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>CONTACTEZ-NOUS</h4>
+        <ul class="footer__links">
+          <li><a href="#">residencelp@gmail.com</a></li>
+        </ul>
+        <div class="footer__socials">
+          <a href="https://www.facebook.com/profile.php?id=61552738791606"><img src="assets/facebook.png" alt="facebook" /></a>
+          <a href="#"><img src="assets/instagram.png" alt="instagram" /></a>
+          <a href="#"><img src="assets/youtube.png" alt="youtube" /></a>
+          <a href="#"><img src="assets/twitter.png" alt="twitter" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bar">
+      © 2025 Hotel Résidence LP. Tous droits réservés.
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
