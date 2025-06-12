@@ -81,8 +81,14 @@ a {
 }
 
 .logo {
-  max-width: 120px;
+  max-width: 100px;
 }
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
 
 html,
 body {
@@ -102,59 +108,68 @@ body {
 
 nav {
   position: fixed;
-  isolation: isolate;
   top: 0;
   width: 100%;
-  max-width: var(--max-width);
-  margin: auto;
-  z-index: 9;
+  background-color: var(--primary-color);
+  z-index: 999;
 }
 
+
 .nav__bar {
-  padding: 1rem;
+  max-width: var(--max-width);
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
-  background-color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  height: 56px;
 }
 
+
 .nav__menu__btn {
-  font-size: 1.5rem;
+  display: block;
+  font-size: 1.8rem;
   color: var(--white);
   cursor: pointer;
 }
 
+
 .nav__links {
   list-style: none;
   position: absolute;
-  width: 100%;
-  padding: 2rem;
-  display: flex;
-  align-items: center;
+  top: 56px;
+  left: 0;
+  right: 0;
+  background-color: var(--primary-color-dark);
   flex-direction: column;
-  gap: 2rem;
-  background-color: rgba(188, 28, 92, 0.9);
-  transform: translateY(-100%);
-  transition: 0.5s;
-  z-index: -1;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+  display: none;
+  z-index: 998;
 }
+
+.nav__links.open {
+  display: flex;
+}
+
 
 .nav__links.open {
   transform: translateY(0);
 }
 
 .nav__links a {
-  position: relative;
-  isolation: isolate;
-  padding-bottom: 8px;
+  font-size: 14px;
   color: var(--white);
-  transition: 0.3s;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
 }
+
 
 .nav__btn {
   display: none;
 }
+
 
 .header__container {
   padding-block: 10rem 15rem;
